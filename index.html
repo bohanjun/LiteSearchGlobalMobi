@@ -153,9 +153,9 @@
             else if(engine_id==17)url_jump="https://search.jd.com/Search?enc=utf-8&keyword="+document.getElementById("search_box").value+"&wq="+document.getElementById("search_box").value;
             else if(engine_id==18)url_jump="https://search.yhd.com/c0-0/k"+document.getElementById("search_box").value;
             else if(engine_id==19)url_jump="https://list.tmall.com/search_product.htm?q="+document.getElementById("search_box").value;
-            else if(engine_id==20)url_jump="https://eb5d.ouz88920.workers.dev/-----https://www.google.com/search?q="+document.getElementById("search_box").value;
-            else if(engine_id==21)url_jump="https://st07.ouz88920.workers.dev/-----https://zh.wikipedia.org/w/index.php?search="+document.getElementById("search_box").value;
-            else if(engine_id==22)url_jump="https://g16h.ouz88920.workers.dev/-----https://www.youtube.com/results?search_query="+document.getElementById("search_box").value;
+            else if(engine_id==20)url_jump="https://www.google.com/search?q="+document.getElementById("search_box").value;
+            else if(engine_id==21)url_jump="https://zh.wikipedia.org/w/index.php?search="+document.getElementById("search_box").value;
+            else if(engine_id==22)url_jump="https://www.youtube.com/results?search_query="+document.getElementById("search_box").value;
             else url_jump="https://www.oier.fun/";
             window.open(url_jump.replace(/\+/g,'%2B'),"_blank");
         }
@@ -315,6 +315,9 @@
             else if(url_e==17)jd(),engines_fold();
             else if(url_e==18)yhd(),engines_fold();
             else if(url_e==19)tmall(),engines_fold();
+            else if(url_e==20)google(),engines_fold();
+            else if(url_e==21)wikipedia(),engines_fold();
+            else if(url_e==22)youtube(),engines_fold();
         }
     </script>
 </body>
